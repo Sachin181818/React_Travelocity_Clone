@@ -1,0 +1,46 @@
+.upperform{
+    display:grid;
+    gap:20px;
+    width:100%;
+    grid-template-columns: 45% 25% 25%;
+    justify-content: space-around;
+   
+}
+.inputbox1{
+    border:1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    gap:13px;
+    align-items: center;
+}
+.inputbox1:hover,.datebox1:hover{
+ border:1px solid #0a438b;
+}
+.inputbox1>input{
+    width: 60%;
+    height: 96%;
+    border: none;
+    outline: none;
+    font-size: 18px;
+    font-weight: 700;
+}
+.datebox1{
+    border:1px solid grey;
+    border-radius: 8px;
+    display: flex;
+    box-sizing: border-box;
+    align-items: center;
+    box-sizing: border-box;
+}
+.datebox1>input{
+    /* padding: 15px; */
+    font-family: monospace;
+    font-size: 18px;
+    border: none;
+    outline:none;border-radius: 5px;
+}
+
+::-webkit-calendar-picker-indicator{
+    cursor: pointer;
+    border-radius: 3px;
+}
