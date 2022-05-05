@@ -10,29 +10,6 @@ import StarRating from "./StarRating";
 
 export const Left=()=> {
  
-
- 
-
-  // const HotData=async()=>{
-  //   let promise =await fetch("http://localhost:3000/HotelData");
-  //   let data = await promise.json();
-  //   setData(data)
-  // }
-
-
-  // useEffect(()=>{
-  //   HotData();
-  // },[])
-
-
-
-  // const handleStar=async(star)=>{
-  //       let promise =await fetch("http://localhost:3000/Hoteldata");
-  //       let data = await promise.json();
-  //       setData(newData)
-  //     }
-    
-
   return (
     <>
    <div>

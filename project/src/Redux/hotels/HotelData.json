@@ -34,7 +34,7 @@
         "Location": "Mumbai",
         "Cost": 205,
         "Rating": 4.8,
-        "Review": 997
+        "Review": 1997
       },
       {
         "id": "XKRkp9XGt9AVm3gjen6Au",
@@ -50,9 +50,9 @@
         "url": "https://images.trvl-media.com/hotels/1000000/50000/49300/49261/a652d6bb.jpg?impolicy=resizecrop&rw=455&ra=fit",
         "Name": "Novotel Mumbai",
         "Location": "Mumbai",
-        "Cost": 130,
+        "Cost": 321,
         "Rating": 3.5,
-        "Review": 666
+        "Review": 1666
       },
       {
         "id": "cL7f1qlxkYtqDb_hj2GjO",
@@ -70,7 +70,7 @@
         "Location": "Powai,Mumbai",
         "Cost": 135,
         "Rating": 4.3,
-        "Review": 246
+        "Review": 1246
       },
       {
         "id": "vcZEpTLyUqsm-BvahUw-n",
@@ -89,6 +89,105 @@
         "Cost": 136,
         "Rating": 3.7,
         "Review": 236
+      },
+      {
+        "id": "Oeb-26EgDSWdMZ3cl",
+        "url": "https://images.trvl-media.com/hotels/23000000/22780000/22779800/22779778/89717a7a.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Eco Garden",
+        "Location": "Mumbai",
+        "Cost": 10,
+        "Rating": 1,
+        "Review": 1064
+      },
+      {
+        "id": "Oeb-26EgDSW3cl",
+        "url": "https://images.trvl-media.com/hotels/39000000/38450000/38442900/38442834/7510b319.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Road House Hotel",
+        "Location": "Mumbai",
+        "Cost": 30,
+        "Rating": 1.5,
+        "Review": 436
+      },
+      {
+        "id": "Oeb-2EgDSWdMZ3cl",
+        "url": "https://images.trvl-media.com/hotels/23000000/22350000/22345500/22345441/eadacd8d.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Piggy Hotel",
+        "Location": "Mumbai",
+        "Cost": 50,
+        "Rating": 1.7,
+        "Review": 573
+      },
+      {
+        "id": "Oeb-2EgdssWdMZ3cl",
+        "url": "https://images.trvl-media.com/hotels/78000000/77950000/77946500/77946449/5109c2ca.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Agunda Hotel",
+        "Location": "Mumbai",
+        "Cost": 75,
+        "Rating": 2.7,
+        "Review": 431
+      },
+      {
+        "id": "Oeb-d43DSWdMZ3cl",
+        "url": "https://images.trvl-media.com/hotels/10000000/9130000/9127200/9127162/e8293149.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Banyan Tree Yoga",
+        "Location": "Mumbai",
+        "Cost": 67,
+        "Rating": 2.3,
+        "Review": 93
+      },
+      {
+        "id": "Oeb-2EgDSWdfes3cl",
+        "url": "https://images.trvl-media.com/hotels/22000000/21500000/21496500/21496482/49574bc2.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Om Santi patnem ",
+        "Location": "Mumbai",
+        "Cost": 87,
+        "Rating": 2.9,
+        "Review": 513
+      },
+      {
+        "id": "Oeb-2EgDSWdfeshf",
+        "url": "https://images.trvl-media.com/hotels/5000000/4600000/4594500/4594477/6be9aa9e.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Casa Vagator",
+        "Location": "Mumbai",
+        "Cost": 121,
+        "Rating": 3.9,
+        "Review": 533
+      },
+      {
+        "id": "Oeb-2EgDSWdfe345cl",
+        "url": "https://images.trvl-media.com/hotels/75000000/74980000/74973400/74973345/f451ff1b.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Ukiyo beach Restaurant",
+        "Location": "Mumbai",
+        "Cost": 121,
+        "Rating": 3.7,
+        "Review": 875
+      },
+      {
+        "id": "Oeb-232effdDSWdfes3cl",
+        "url": "https://images.trvl-media.com/hotels/8000000/7540000/7539900/7539882/3e77edb4.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Riva Beach Restaurant",
+        "Location": "Mumbai",
+        "Cost": 100,
+        "Rating": 3.2,
+        "Review": 423
+      },
+      {
+        "id": "Oeb-232effdDjkfSWdfes3cl",
+        "url": "https://images.trvl-media.com/hotels/3000000/2400000/2392900/2392880/a048c3dd.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Miraj Hotel",
+        "Location": "Mumbai",
+        "Cost": 1190,
+        "Rating": 4.2,
+        "Review": 1985
+      },
+      {
+        "id": "Oeb-dDSW3cl",
+        "url": "https://images.trvl-media.com/hotels/1000000/530000/526100/526001/8295b561.jpg?impolicy=resizecrop&rw=455&ra=fit",
+        "Name": "Bawa International",
+        "Location": "Mumbai",
+        "Cost": 345,
+        "Rating": 4.4,
+        "Review": 4235
       }
     ]
   }
