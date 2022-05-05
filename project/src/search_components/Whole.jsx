@@ -1,5 +1,5 @@
 import React from 'react'
-import Left from './Left'
+import {Left} from './Left'
 import Right from './Right'
 import styles from './Search.module.css'
 
