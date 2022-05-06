@@ -205,11 +205,12 @@ let roomData = [
 ];
 
 const Roomdetails = () => {
+  console.log(roomData.length, "length of array");
   return (
     <>
       {roomData.map((el) => {
         // console.log("elem", el);
-        return <Rooms key={el.id} el={el} />;
+        return <Rooms key={el.id} {...el} />;
       })}
     </>
   );

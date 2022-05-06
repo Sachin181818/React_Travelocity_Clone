@@ -1,4 +1,5 @@
 import React from "react";
+
 import styles from "./rooms.module.css";
 const DetailsPage = () => {
   return (
