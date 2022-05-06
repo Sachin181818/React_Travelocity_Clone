@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../search_components/Hotel.css"
 import AppleIcon from '@mui/icons-material/Apple';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 
 const Signup = () => {
  const [signupData,setSignupData]=useState({});
@@ -53,12 +53,12 @@ const handleSubmit=(e)=>{
                     </p>
                 </div>
                 <div>
-                    <input type="submit" className='signupsubmit' value="continue" />
+                    <input type="submit" className='signupsubmit' value="Continue" />
                 </div>
             </div>
         </form>
         <div id="endsignup">
-          <p>Already have an account? <span>Sign in</span></p>    
+          <p>Already have an account? <Link to={"/signin"}>Sign in</Link></p>    
           <p>or continue with</p>
           <div><AppleIcon style={{marginRight:"10px",fontSize:"30px"}}/><FacebookIcon style={{color:"blue",fontSize:"30px"}}/></div>
         </div>

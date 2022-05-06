@@ -8,6 +8,7 @@ import HotelSearch from '../pages/HotelSearch'
 import SingleHotel from '../pages/SingleHotel'
 import Signup from '../pages/Signup'
 import Login from '../pages/Login'
+import Payment from '../pages/Payment'
 const MainRoute = () => {
   return (
     <div>
@@ -19,6 +20,7 @@ const MainRoute = () => {
            <Route path={"/hotel"} element={<SingleHotel/>}/>
            <Route path={"/signup"} element={<Signup/>}/>
            <Route path={"/signin"} element={<Login/>}/>
+           <Route path={"/payment"} element={<Payment/>}/>
         </Routes>
         <Fotter/>
     </div>

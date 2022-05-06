@@ -21,11 +21,11 @@ export default function SideSelect() {
         aria-label="wrapped label tabs example"
       >
         <Tab value="one" label="Stay " wrapped style={{fontWeight:"bolder"}} />
-        <Tab value="two" label="Flights" style={{fontWeight:"550"}} />
-        <Tab value="three" label="Cars" style={{fontWeight:"550"}} />
-        <Tab value="four" label="Packages" style={{fontWeight:"550"}} />
-        <Tab value="five" label="Things to do" style={{fontWeight:"550"}} />
-        <Tab value="six" label="Cruises" style={{fontWeight:"550"}} />
+        <Tab value="two" label="Flights" style={{fontWeight:"500",width:"max-content"}} />
+        <Tab value="three" label="Cars" style={{fontWeight:"500",width:"max-content"}} />
+        <Tab value="four" label="Packages" style={{fontWeight:"500",width:"max-content"}} />
+        <Tab value="five" label="Things to do" style={{fontWeight:"500",width:"max-content"}} />
+        <Tab value="six" label="Cruises" style={{fontWeight:"500",width:"max-content"}} />
       </Tabs>
     </Box>
   );

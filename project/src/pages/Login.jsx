@@ -2,7 +2,7 @@ import React, { useState } from 'react'
 import "../search_components/Hotel.css"
 import AppleIcon from '@mui/icons-material/Apple';
 import FacebookIcon from '@mui/icons-material/Facebook';
-import { useNavigate } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import { useDispatch } from 'react-redux';
 import { loginSuccess } from '../Redux/hotels/action';
 
@@ -67,7 +67,7 @@ const Login = () => {
     </form>
     <div id="endsignup">
       <p id="sp1" style={{color:"#0a438b"}}>Forgot Password</p>
-      <p>Don't have an account? <span>Create one</span></p>    
+      <p>Don't have an account? <Link to={"/signup"}>Create one</Link></p>    
       <p>or continue with</p>
       <div><AppleIcon style={{marginRight:"10px",fontSize:"30px"}}/><FacebookIcon style={{color:"blue",fontSize:"30px"}}/></div>
     </div>

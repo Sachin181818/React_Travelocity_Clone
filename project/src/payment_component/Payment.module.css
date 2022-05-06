@@ -1,0 +1,129 @@
+.payhead{
+    width:90%;
+    margin:auto;
+}
+.payhead>div>h1{
+    color:#0a438b;
+}
+.lowhead{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    box-sizing: border-box;
+    padding: 9px 20px;
+}
+.lowhead>div>p{
+    line-height: 5px;
+}
+
+.lowhead>div>p:first-child{
+    font-weight: 600;
+}
+.emailbox{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    gap:30px;
+    box-sizing: border-box;
+    padding: 7px 20px;
+    margin-top: 20px;
+}
+.emailbox>div>h3,.emailbox>div>p{
+    line-height: 5px;
+}
+.paycontent{
+    display: grid;
+    gap:15px;
+    grid-template-columns: 70% 30%;
+    width: 90%;
+    margin: auto;
+}
+.personicon{
+    display: flex;
+    align-items: center;
+    gap:20px;
+}
+.personicon>h3>span{
+    font-weight: normal;
+    font-size: 17px;
+}
+.loadformbox{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 8px;
+    padding: 25px;
+}
+.done{
+    display: flex;
+    gap:5px;
+    align-items: center;
+    margin-left: 5%;
+    margin-top: -30px;
+   
+}
+
+.done>p{
+    color:green;
+    font-weight: 600;
+}
+.tname{
+    margin-left: 5%;
+}
+.tname>p{
+color:grey;
+font-weight: 600;
+}
+.startform>div>p{
+    color:grey;
+font-weight: 600;
+}
+.startform>div>div>p{
+    color:grey;
+font-weight: 600;
+}
+.tname>select{
+    font-size: 17px;
+    font-weight: 400;
+    background-color: lightgray;
+    border-radius: 5px;
+    padding: 8px 30px;
+}
+.startform{
+    margin-left: 5%;
+    
+}
+.startform>div{
+    display: flex;
+    gap:20px;
+}
+
+.lastinput{
+    width: 96%;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 5px;
+    padding: 8px;
+    margin-right: 10px;
+}
+.lastinput2{
+    width: 45%;
+    padding: 8px;
+    font-weight: 400;
+    font-size: 17px;
+    border-radius: 5px;
+
+}
+.finalpay{
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    margin-top: 8px;
+    padding: 25px;
+}
+.logobox{
+    display: flex;
+    gap:10px;
+    margin-top: 30px;
+}
+.logobox>img{
+    width: 32.72px;
+    height: 18.85px;
+}
