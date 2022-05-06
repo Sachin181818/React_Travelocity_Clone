@@ -4,13 +4,13 @@ import "./Hotel.css"
 import { useSelector } from 'react-redux';
 import { nanoid } from 'nanoid';
 import Recommended from './Recommended';
+import { useNavigate } from 'react-router-dom';
 
 
 
 const Right = () => {
   const hotels= useSelector((state)=>state.hotels)
-    
-
+  const navigate= useNavigate();
 
   
 
@@ -22,7 +22,10 @@ const Right = () => {
     {hotels.map((el)=>{
       return (
         <React.Fragment key={nanoid()}>
-        <div >
+        <div onClick={()=>{
+          localStorage.setItem("singleHotel",JSON.stringify(el));
+          navigate("/hotel")
+        }} >
           <div><img src={el.url} alt=""/></div>
           <div>
             <h2>{el.Name}</h2>

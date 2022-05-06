@@ -3,9 +3,13 @@ import styles from "./Navbar.module.css"
 import SideSelect from "./SideSelect"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ScheduleSendTwoToneIcon from '@mui/icons-material/ScheduleSendTwoTone';
+import { useNavigate } from 'react-router-dom';
+import { useSelector } from 'react-redux';
 
 const Formbox = () => {
   const [travelForm,setTravelForm]= useState({});
+  const navigate= useNavigate();
+  const login= useSelector((state)=>state.login);
   
   const handleChange= (e)=>{
     let field=e.target;
@@ -13,8 +17,13 @@ const Formbox = () => {
   }
   const handleSubmit= (e)=>{
     e.preventDefault();
-    console.log(travelForm);
     localStorage.setItem("travel",JSON.stringify(travelForm));
+    if(login){
+      navigate("/search")
+    }else{
+      alert("Please Signup first")
+      navigate("/signin")
+    }
   }
 
   return (

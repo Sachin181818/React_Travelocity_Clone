@@ -17,6 +17,8 @@ export const RATING_THREE_PLUS="RATING_THREE_PLUS"
 export const REVIEW_GREATER_THAN_1K="REVIEW_GREATER_THAN_1K"
 export const HIGH_REVIEW_RATING="HIGH_REVIEW_RATING"
 export const HIGH_REVIEW_COST="HIGH_REVIEW_COST"
+export const LOGIN_SUCCESS="LOGIN_SUCCESS"
+
 
 export const greaterOne = ()=>{
     return{
@@ -125,5 +127,11 @@ export const highReviewRating= ()=>{
 export const highReviewCost=()=>{
     return {
         type:HIGH_REVIEW_COST
+    }
+}
+
+export const loginSuccess= ()=>{
+    return {
+        type:LOGIN_SUCCESS
     }
 }

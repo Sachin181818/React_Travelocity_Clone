@@ -61,12 +61,7 @@
 
 .whole{
     display:grid;
-    gap: 70px;
-    border:1px solid red;
     width: 90%;
     margin: auto;
-    grid-template-columns: 25% 70%;
-}
-.whole>div{
-    border:1px solid blue;
+    grid-template-columns: 23% 77%;
 }
