@@ -1,6 +1,7 @@
 import React from "react";
 import Rooms from "./Rooms";
 import { v4 as uuid } from "uuid";
+import styles from "./rooms.module.css";
 let roomData = [
   {
     id: uuid(),
@@ -208,10 +209,12 @@ const Roomdetails = () => {
   console.log(roomData.length, "length of array");
   return (
     <>
-      {roomData.map((el) => {
-        // console.log("elem", el);
-        return <Rooms key={el.id} {...el} />;
-      })}
+      <div className={styles.conatiner}>
+        {roomData.map((el) => {
+          // console.log("elem", el);
+          return <Rooms key={el.id} {...el} />;
+        })}
+      </div>
     </>
   );
 };
