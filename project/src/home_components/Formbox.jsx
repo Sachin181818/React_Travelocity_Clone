@@ -4,12 +4,14 @@ import SideSelect from "./SideSelect"
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ScheduleSendTwoToneIcon from '@mui/icons-material/ScheduleSendTwoTone';
 import { useNavigate } from 'react-router-dom';
-import { useSelector } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
+import { showData } from '../Redux/hotels/action';
 
 const Formbox = () => {
   const [travelForm,setTravelForm]= useState({});
   const navigate= useNavigate();
   const login= useSelector((state)=>state.login);
+  const dispatch=useDispatch()
   
   const handleChange= (e)=>{
     let field=e.target;
@@ -19,7 +21,9 @@ const Formbox = () => {
     e.preventDefault();
     localStorage.setItem("travel",JSON.stringify(travelForm));
     if(login){
+      dispatch(showData())
       navigate("/search")
+      
     }else{
       alert("Please Signup first")
       navigate("/signin")

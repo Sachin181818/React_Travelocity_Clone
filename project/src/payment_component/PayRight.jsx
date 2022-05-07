@@ -1,8 +1,11 @@
 import React from 'react'
+import HotelDetail from './HotelDetail'
 
 const PayRight = () => {
   return (
-    <div>PayRight</div>
+    <div>
+      <HotelDetail/>
+    </div>
   )
 }
 

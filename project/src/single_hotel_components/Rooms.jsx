@@ -1,7 +1,9 @@
 import React from "react";
+import { useNavigate } from "react-router-dom";
 import styles from "./rooms.module.css";
 
 const Rooms = ({a,b,c,d,e,f,g,h,i,j,k,l,m,n,o}) => {
+  let navigate=useNavigate()
   return (
     <>
       <div className={styles.cont}>
@@ -106,7 +108,7 @@ const Rooms = ({a,b,c,d,e,f,g,h,i,j,k,l,m,n,o}) => {
           <div>
             {" "}
             <h1>+ $30</h1>
-            <button>Reserve</button>
+            <button onClick={()=>navigate("/payment")}>Reserve</button>
           </div>
         </div>
       </div>

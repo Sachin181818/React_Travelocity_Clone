@@ -4,13 +4,14 @@ import styles from "./Payment.module.css"
 import PersonIcon from '@mui/icons-material/Person';
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline';
 const UserInfo = () => {
+    let user= JSON.parse(localStorage.getItem("loginperson"))
   return (
     <div>
         <div className={styles.emailbox}>
            <LockIcon/>
            <div>
                <h3>Signed in as</h3>
-               <p>aman.jaiswal0612@gmail.com</p>
+               <p>{user.email}</p>
            </div>
         </div>
         <div className={styles.loadformbox}>
@@ -27,7 +28,7 @@ const UserInfo = () => {
             <div className={styles.tname}>
                 <p>Traveler name<sup style={{color:"red",fontSize:"20px"}} >*</sup></p>
                 <select>
-                    <option value="Aman">Aman Jaiswal</option>
+                    <option value="Aman">{user.firstname} {user.lastname}</option>
                     <option>Add Members</option>
                     <option>Remove Member</option>
                 </select>

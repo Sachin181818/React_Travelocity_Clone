@@ -2,21 +2,26 @@ import React, { useState } from 'react'
 import styles from './Search.module.css'
 import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ScheduleSendTwoToneIcon from '@mui/icons-material/ScheduleSendTwoTone';
+import { useDispatch } from 'react-redux';
+import { showData } from '../Redux/hotels/action';
 
 
 const SearchDeatail = () => {
   let search=JSON.parse(localStorage.getItem("travel"))||{}
   let [searchForm,setSearchForm]= useState(search)
+  let dispatch=useDispatch()
 
   const handleChange= (e)=>{
     let field=e.target;
     setSearchForm({...searchForm,[field.name]:field.value})
   }
 
-  const handleSubmit=(e)=>{
+  const  handleSubmit= async(e)=>{
      e.preventDefault();
      localStorage.setItem("travel",JSON.stringify(searchForm))
+     dispatch(showData())    
   }
+  
 
   return (
     <div>
