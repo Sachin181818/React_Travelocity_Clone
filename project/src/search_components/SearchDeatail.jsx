@@ -4,6 +4,7 @@ import LocationOnIcon from '@mui/icons-material/LocationOn';
 import ScheduleSendTwoToneIcon from '@mui/icons-material/ScheduleSendTwoTone';
 import { useDispatch } from 'react-redux';
 import { showData } from '../Redux/hotels/action';
+import HotelData from "../Redux/hotels/HotelData.json"
 
 
 const SearchDeatail = () => {
@@ -16,10 +17,16 @@ const SearchDeatail = () => {
     setSearchForm({...searchForm,[field.name]:field.value})
   }
 
-  const  handleSubmit= async(e)=>{
+  const  handleSubmit= (e)=>{
      e.preventDefault();
      localStorage.setItem("travel",JSON.stringify(searchForm))
-     dispatch(showData())    
+     const city= JSON.parse(localStorage.getItem("travel")).going;
+     if(city==="mumbai"||city==="Mumbai"){
+      var hotel=HotelData.Mumbaidata;
+      }else if(city==="goa"||city==="Goa"){
+        hotel=HotelData.goaData;
+      }
+     dispatch(showData(hotel))    
   }
   
 

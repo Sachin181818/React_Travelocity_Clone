@@ -11,7 +11,7 @@ import { useNavigate } from 'react-router-dom';
 const Right = () => {
   const hotels= useSelector((state)=>state.hotels)
   const navigate= useNavigate();
-
+  
   
 
    return(

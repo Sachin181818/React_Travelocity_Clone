@@ -139,7 +139,7 @@ export default (state = initialState, { type, payload }) => {
   }
   case SHOW_DATA:{
     return{
-      ...state,hotels:hotel
+      ...state,hotels:payload
     }
   }
 

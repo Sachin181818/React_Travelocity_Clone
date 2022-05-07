@@ -136,8 +136,9 @@ export const loginSuccess= ()=>{
     }
 }
 
-export const showData= ()=>{
+export const showData= (payload)=>{
     return{
-        type:SHOW_DATA
+        type:SHOW_DATA,
+        payload
     }
 }

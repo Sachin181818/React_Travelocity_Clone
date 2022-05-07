@@ -6,10 +6,13 @@ import ScheduleSendTwoToneIcon from '@mui/icons-material/ScheduleSendTwoTone';
 import { useNavigate } from 'react-router-dom';
 import { useDispatch, useSelector } from 'react-redux';
 import { showData } from '../Redux/hotels/action';
+import HotelData from "../Redux/hotels/HotelData.json"
+
 
 const Formbox = () => {
   const [travelForm,setTravelForm]= useState({});
   const navigate= useNavigate();
+  
   const login= useSelector((state)=>state.login);
   const dispatch=useDispatch()
   
@@ -19,9 +22,16 @@ const Formbox = () => {
   }
   const handleSubmit= (e)=>{
     e.preventDefault();
+   
     localStorage.setItem("travel",JSON.stringify(travelForm));
+    const city= JSON.parse(localStorage.getItem("travel")).going;
     if(login){
-      dispatch(showData())
+      if(city==="mumbai"||city==="Mumbai"){
+        var hotel=HotelData.Mumbaidata;
+        }else if(city==="goa"||city==="Goa"){
+          hotel=HotelData.goaData;
+        }
+      dispatch(showData(hotel))
       navigate("/search")
       
     }else{
