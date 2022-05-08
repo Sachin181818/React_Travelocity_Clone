@@ -2,8 +2,10 @@ import React from 'react'
 import styles from "./Payment.module.css"
 import DoneOutlineIcon from '@mui/icons-material/DoneOutline';
 import LockOutlinedIcon from '@mui/icons-material/LockOutlined';
+import { useNavigate } from 'react-router-dom';
 
 const Booking = () => {
+  let navigate= useNavigate()
   return (
     <div className={styles.booking}>
         <h3>Important information about your booking</h3>
@@ -22,7 +24,7 @@ const Booking = () => {
         <DoneOutlineIcon style={{fontSize:"18px",color:"green",height:"max-content"}}/>
         <p style={{color:"darkgreen"}}>Change of plans? No problem. You can cancel for free before <span style={{color:"#0a438b",textDecoration:"underline",fontWeight:"500"}} >Thu. May 19</span></p>
         </div>
-        <button>Complete Booking</button>
+        <button onClick={()=>navigate("/paymentsucessful")}>Complete Booking</button>
         <p style={{color:"grey"}}><LockOutlinedIcon style={{height:"16px",weight:"16px"}}/>We use secure transmission and encrypted storage to protect your personal information. <br /> &nbsp; &nbsp;&nbsp;This payment will be processed in the U.S. This does not apply when the travel provider (airline/hotel/rail, etc.)<br/>&nbsp;&nbsp;&nbsp; processes your payment. </p>
       
     </div>

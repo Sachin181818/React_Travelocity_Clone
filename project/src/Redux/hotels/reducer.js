@@ -1,14 +1,18 @@
 import { GREATER_THREE_HUNDRED, GUEST_RATING, HIGH_REVIEW_COST, HIGH_REVIEW_RATING, LESS_ONE_TWENTY_FIVE, LESS_SEVENTYFIVE, LESS_THREE_HUNDRED, LESS_TWO_HUNDRED, LOGIN_SUCCESS, OUR_PICK_PRICE, PRICE_LOW_TO_HIGH, RATING_FOUR_PLUS, RATING_GREATER_FIVE, RATING_GREATER_FOUR, RATING_GREATER_ONE, RATING_GREATER_THREE, RATING_GREATER_TWO, RATING_THREE_PLUS, REVIEW_GREATER_THAN_1K, SHOW_DATA, STAR_RATING } from "./action"
 import HotelData from "./HotelData"
 
-let place=JSON.parse(localStorage.getItem("travel"))||""
-if(place.going==="mumbai"||place.going==="Mumbai"){
-var hotel=HotelData.Mumbaidata;
-}else if(place.going==="goa"||place.going==="Goa"){
-  hotel=HotelData.goaData;
-}else{
-  hotel=[]
-}
+// let place=JSON.parse(localStorage.getItem("travel"))||""
+// if(place.going==="mumbai"||place.going==="Mumbai"){
+// var hotel=HotelData.Mumbaidata;
+// }else if(place.going==="goa"||place.going==="Goa"){
+//   hotel=HotelData.goaData;
+// }else{
+//   hotel=[]
+// }
+
+let mumbai=HotelData.Mumbaidata;
+let goa=HotelData.goaData;
+var hotel=[...mumbai,...goa]
 let initialState={
     hotels:hotel,
     login:false

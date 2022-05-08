@@ -19,9 +19,13 @@ const Login = () => {
             setLoginData({...loginData,[field.name]:field.value})
         }
     }
-    let userinfo=JSON.parse(localStorage.getItem("userinfo"));
+    let userinfo=JSON.parse(localStorage.getItem("userinfo"))||"";
     const handleSubmit= (e)=>{
         e.preventDefault();
+        if(userinfo===""){
+            alert("User Not Found Please create a account")
+            navigate("/signup")
+        }else{
         let flag=false;
         for(let i=0;i<userinfo.length;i++){
             if(userinfo[i].email===loginData.email&&userinfo[i].password===loginData.password){
@@ -35,6 +39,7 @@ const Login = () => {
         }else{
             alert("Invalid Credentials")
         }
+      }
     }
   return (
     <div className='signupbox'>
