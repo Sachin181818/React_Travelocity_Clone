@@ -7,7 +7,5 @@ Deployed Link of Our project
 
 Executing the commands mentioned below one by one in your command line will help in making this React app . Cloning
 
-
-https://github.com/AmanJaiswal0612/React_Travelocity_Clone.git
-cd ./project
+https://github.com/Sachin181818/React_Travelocity_Clone
 npm start
