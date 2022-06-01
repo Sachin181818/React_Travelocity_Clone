@@ -5,7 +5,7 @@ This is the clone of the Travelocity website. Travelocity is an online travel ag
 <h1>Sachin</h1>
 
 Deployed Link of Our project
-https://celadon-dodol-b03f1e.netlify.app
+https://sachin-travelocity.netlify.app
 
 Executing the commands mentioned below one by one in your command line will help in making this React app . Cloning
 
